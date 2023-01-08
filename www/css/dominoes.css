@@ -1,0 +1,302 @@
+.board {
+    position:relative;
+    width:100%;
+    height:80%
+}
+
+.handDominoes {
+    display: block;
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+}
+
+.scores th,td {
+    text-align: center;
+    background-color: white;
+}
+
+.wrapper {
+    background-image: url("board.jpg");
+    background-size: 100% 100vh;
+    box-shadow: none;
+    -webkit-transition: box-shadow 1200ms linear;
+    -ms-transition: box-shadow 1200ms linear;
+    transition: box-shadow 1200ms linear;
+}
+
+.wrapper_title {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.438);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#bone {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#maingame {
+    width: 100%;
+    height: 100%;
+}
+
+#player_info {
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+#boneyard {
+    width: 20%;
+}
+
+#hands {
+    width: 80%;
+}
+
+#canvases {
+    width: fit-content;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: auto;
+}
+
+#canvases::-webkit-scrollbar {
+    display: none;
+}
+  
+#canvases {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+#this_player {
+    width: 20%;
+}
+
+.title_image {
+    width: 40px;
+    height: 40px;
+}
+
+.main {
+    flex: 1 1 1em;
+}
+
+.main_min {
+    min-height: 0;
+}
+
+.searching {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.players {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerheader {
+    margin-bottom: 0;
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+}
+
+.this_playerheader {
+    margin-bottom: 0;
+    color: black;
+    font-size: 3.5vmin;
+}
+
+#this_player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BoneyardDominoesNumber {
+    color: white;
+    font-size: 5vmin;
+    height: 50%;
+    margin-bottom: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 54%;
+}
+
+.BoneyardDominoes {
+    background-image: url("handIcon.png");
+    background-size: 100% 100%;
+    width: 10vmin;
+    height: 10vmin;
+}
+
+#boneyard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerswrapper {
+    display: flex;
+    flex: 1;
+}
+
+.playerdominoes {
+    background-image: url("handIcon.png");
+    background-size: 100% 100%;
+    width: 38.4px;
+    height: 38.4px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.CurrentPlayer {
+    color: black;
+}
+
+.remainingDominoes {
+    height: 55%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    margin-right: 22px;
+    margin-bottom: 45%;
+}
+
+.player {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_players {
+    font-size: 5rem;
+    flex: 1;
+}
+
+.main_title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_title h1 {
+    vertical-align: middle;
+    color: white;
+}
+
+.main_title_image {
+    width: 60px;
+    height: 60px;
+}
+
+.load_more {
+    position: relative;
+    background-color: #7386D5;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.load_more:hover {opacity: 1}
+
+.load_more:after {
+    content: "";
+    background: #4c5a92;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+.load_more:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.main {
+    text-align: center;
+}
+
+#playersSubmenu a {
+    padding: 0 !important;
+}
+
+#playersSubmenu input[type=radio] {
+    margin-left: 50px !important;
+}
+
+#playersSubmenu label {
+    width: 69%;
+    margin-bottom: 0;
+    padding: 10px 0 10px 10px;
+    font-size: 0.75em !important;
+}
+
+#sidebar.active input[type=radio] {
+    margin-left: 30px !important;
+    width: 8px;
+    height: 8px;
+}
+
+#gameSubmenu a {
+    font-size: 0.85em !important;
+}
+
+#sidebar.active #gameSubmenu a {
+    font-size: 0.75em !important;
+}
+
+#sidebar.active #gameSubmenu .dropdown-toggle::after {
+    top: 80%;
+}
+
+#sidebar.active #gameSubmenu #playersSubmenu a {
+    padding: 0 0 0 0 !important;
+}
+
+#sidebar.active #gameSubmenu label {
+    width: 48%;
+    padding-right: 10px;
+}
