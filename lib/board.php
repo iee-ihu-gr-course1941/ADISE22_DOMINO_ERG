@@ -261,7 +261,7 @@
             }
         }
         else {
-            header('Location: http://'. $_SERVER['HTTP_HOST'] . '/~it185173/login.html');
+            header('Location: http://'. $_SERVER['HTTP_HOST'] . '/~it185173/ADISE22_dominoes_erg/login.html');
         }
     }
 
@@ -472,7 +472,7 @@
             }
         }
         else {
-            header('Location: http://'. $_SERVER['HTTP_HOST'] . '/~it185173/login.html');
+            header('Location: http://'. $_SERVER['HTTP_HOST'] . '/~it185173/ADISE22_dominoes_erg/login.html');
         }
     }
 ?>

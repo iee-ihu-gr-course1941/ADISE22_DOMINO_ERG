@@ -17,7 +17,7 @@
     else {
         if (!(count($request) == 1 && array_values($request)[0] == 'users' && $method != 'GET') && 
         !(count($request) == 2 && array_values($request)[0] == 'users' && array_values($request)[1] == 'authorized')) {
-            header('Location: http://'. $_SERVER['HTTP_HOST'] . '/~it185173/login.html');
+            header('Location: http://'. $_SERVER['HTTP_HOST'] . '/~it185173/ADISE22_dominoes_erg/login.html');
             exit();
         }
     }
