@@ -5,7 +5,7 @@ $.ajax({
     contentType: 'application/json',
     success: (data) => {
         if (data.authorized) {
-            window.location.href = "..";
+            window.location.href = "../ADISE22_dominoes_erg";
         }
     },
     error: () => {
