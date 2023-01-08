@@ -5,7 +5,7 @@ $.ajax({
     contentType: 'application/json',
     success: (data) => {
         if (data.authorized) {
-            window.location.href = "";
+            window.location.href = "..";
         }
     },
     error: () => {
@@ -32,7 +32,7 @@ $(document).ready( () => {
                 $("#ubtn").attr('disabled', true);
                 toasts.show(data.errormesg,'success');
                 setInterval(function redirect() {
-                    window.location.href = "";
+                    window.location.href = "..";
                 }, 2000);
             },
             error: (er) => {
