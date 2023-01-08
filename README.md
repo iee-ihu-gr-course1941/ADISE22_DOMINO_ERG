@@ -1,5 +1,6 @@
 Table of Contents
 =================
+    * [Demo Page](#demo-page)
     * [Περιγραφή Εφαρμογής](#περιγραφή-εφαρμογής)
         * [Περιγραφή Παιχνιδιού](#περιγραφή-παιχνιδιού)
         * [Κανόνες Παιχνιδιού](#κανόνες-παιχνιδιού)
@@ -34,6 +35,7 @@ Table of Contents
             * [Game_status](#gamestatus)
             * [Hands](#hands)
             * [Players](#players)
+=================
 
 
 # Demo Page
