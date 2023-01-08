@@ -15,9 +15,9 @@ Table of Contents
                 * [Ανάγνωση user](#ανάγνωση-user)
                 * [Δημιουργία user](#δημιουργία-user)
                 * [Σύνδεση user](#σύνδεση-user)
-                * [authorized](#authorized)
-                * [logout](#logout)
-                * [highscores](#highscores) 
+                * [Authorized](#authorized)
+                * [Logout](#logout)
+                * [Highscores](#highscores) 
             * [game](#game)
                 * [Ανάγνωση στοιχείων παιχνιδιού](ανάγνωση-στοιχείων-παιχνιδιού)
                 * [Αναζήτηση παιχνιδιού](#αναζήτηση-παιχνιδιού)
@@ -209,21 +209,21 @@ Json Data:
 
 Ελέγχει τα στοιχεία για το αν υπάρχουν στον [Players](#Players). Αν υπάρχουν δημιουργεί random token και το αποθηκεύει σαν cookie καθώς και στον [Players](#Players).
 
-#### authorized
+#### Authorized
 ```
 GEt /users/authorized
 ```
 
 Ελέγχει αν το υπάρχει token στα cookie και αν αυτό το token υπάρχει στον [Players](#Players).
 
-#### logout
+#### Logout
 ```
 POST /users/logout
 ```
 
 Διαγράφει το token που υπάρχει στα cookie απο τον [Players](#Players).
 
-#### highscores
+#### Highscores
 ```
 POST /users/highscores
 ```
